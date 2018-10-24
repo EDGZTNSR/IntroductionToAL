@@ -23,9 +23,9 @@ Go through the following steps to set up a sandbox environment. With this you ge
 ```
 ----------
 ### JSON Files
-----------
+
 There are two JSON files in every AL Extension Project, the ```app.sjon``` and the ```launch.sjon``` file. The files are automatically generated.
-----------
+
 #### launch.json File
 | Setting       | Mandatory | Value |
 | ------------- | --------- | ----- |
