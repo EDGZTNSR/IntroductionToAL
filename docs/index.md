@@ -3,7 +3,7 @@
 A small introduction to the development of extensions with AL
 
 ## Getting Stared
-
+****
 ### Documentation
 
 You can find my Documentation [Here](https://introductiontoal.readthedocs.io/en/latest/)
