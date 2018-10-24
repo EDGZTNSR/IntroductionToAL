@@ -20,4 +20,4 @@ For more Information see the Offical Documentation for Debugging from Visual Stu
 | F10 | Step over  |
 | F11 | Step into  |
 | Shift+F11 | Step out  |
-|F12 | Go TO Definition  |
+| F12 | Go To Definition  |
