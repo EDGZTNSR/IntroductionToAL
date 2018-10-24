@@ -1,7 +1,9 @@
 ## Upgrading Extension V1 to V2
 
+
 Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they are different or modify the behavior of the solution.
 The following Steps are necessary for Extension Upgrades:
+
 ----------
 1. Convert the source code from C/AL to the AL syntax.
 2. Complete the development of the extension in AL syntax.
