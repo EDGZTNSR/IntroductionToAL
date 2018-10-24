@@ -19,4 +19,8 @@ The following Steps are necessary for Extension Upgrades:
 * [Command 2: Generate DELTA](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/Examples/Example02/PowershellCommands.md)
 * [Command 3: Convert C/AL To AL](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/Examples/Example02/PowershellCommands.md)
 
-Now we got the AL Files ready. Optionally you can code a Data
+
+Now the only thing left is complete the development of the extension.
+We now have the source code from our AL Files which we can open in Visual Studio Code and modify or add Code.
+
+We might run into some compilation Errors. For more Information see [Here]()
