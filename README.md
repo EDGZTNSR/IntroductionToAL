@@ -36,3 +36,21 @@ There are two JSON files in every AL Extension Project, the ```app.sjon``` and t
 | schemaUpdateMode| No      |Specifies the data synchronization mode when you publish an extension to the development server, for example: "schemaUpdateMode": ```"Synchronize Recreate"```|
 | breakOnError  | No|Specifies whether to break on errors when debugging. The default value is ```true```.|
 | breakOnRecordWrite| No|Specifies if the debugger breaks on record changes. The default value is ```false```.|
+
+#### app.json File
+| Setting       | Mandatory | Value |
+| ------------- | --------- | ----- |
+| id            | Yes       |The unique ID of the extension. When app.json file is automatically created, the ID is set to a new GUID value.|
+| name          | Yes       |The unique extension name.|
+| request       | Yes       |The name of your publisher, for example: NAV Partner, LLC|
+| request       | Yes       |Short description of the extension.|
+| request       | Yes       |Longer description of the extension.|
+| request       | Yes       |The version of the app package.|
+| request       | Yes       |URL to the privacy statement for the extension.|
+| request       | Yes       |URL to the license terms for the extension.|
+| request       | Yes       |URL to the help for the extension.|
+| request       | Yes       |URL of the extension package.|
+| request       | Yes       |Relative path to the app package logo from the root of the package.|
+| request       | Yes       |List of dependencies for the extension package. For example: ```"dependencies": [ { "appId": "4805fd15-75a5-46a2-952f-39c1c4eab821", "name": "WeatherLibrary", "publisher": "Microsoft", "version": "1.0.0.0"}],```|
+| request       | Yes       ||
+| request       | Yes       ||
