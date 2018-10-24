@@ -5,7 +5,7 @@ The process of finding and correcting errors is called debugging. With Visual St
 
 For more Information see the Offical Documentation for Debugging from Visual Studio Code [Here](https://code.visualstudio.com/docs/editor/debugging)
 
-[https://docs.microsoft.com/de-de/dynamics365/business-central/dev-itpro/developer/media/debuggingal.gif]
+![](https://docs.microsoft.com/de-de/dynamics365/business-central/dev-itpro/developer/media/debuggingal.gif)
 
 ----------
 
