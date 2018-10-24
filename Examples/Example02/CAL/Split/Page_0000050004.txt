@@ -10,7 +10,7 @@ OBJECT Page 50004 Character Skill List
   PROPERTIES
   {
     CaptionML=[ENU=Character Skills;
-               DES=Charakter F„higkeiten];
+               DES=Charakter Fâ€žhigkeiten];
     SourceTable=CharacterSkill;
     PageType=ListPart;
     OnAfterGetRecord=BEGIN
