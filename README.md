@@ -27,7 +27,7 @@ There are two JSON files in every AL Extension Project, the ```app.sjon``` and t
 | name          | Yes       |"Publish to your own server"|
 | type          | Yes       |Must be set to ```.al```. Required by Visual Studio Code.|
 | request       | Yes       |Request type of the configuration. Must be set to ```launch```. Required by Visual Studio Code.|
-| server        | Yes       |The HTTP URL of your server, for example: ```http://localhost|serverInstance```|
+| server        | Yes       |The HTTP URL of your server, for example: ```"http://localhost|serverInstance"```|
 | port          | No        |The port assigned to the development service.|
 | serverInstance| No        |The instance name of your server, for example: ```US```|
 | authentication| No        |Specifies the server authentication method.|
@@ -51,8 +51,7 @@ There are two JSON files in every AL Extension Project, the ```app.sjon``` and t
 | request       | Yes       |URL to the help for the extension.|
 | request       | Yes       |URL of the extension package.|
 | request       | Yes       |Relative path to the app package logo from the root of the package.|
-| request       | Yes       |List of dependencies for the extension package. For example:
- ```"dependencies": [ { "appId": "4805fd15-75a5-46a2-952f-39c1c4eab821", "name": "WeatherLibrary", "publisher": "Microsoft", "version": "1.0.0.0"}],```|
+| request       | Yes       |List of dependencies for the extension package. For example: ```"dependencies": [ { "appId": "4805fd15-75a5-46a2-952f-39c1c4eab821", "name": "WeatherLibrary", "publisher": "Microsoft", "version": "1.0.0.0"}],```|
 | request       | Yes       |Relative paths to any screenshots that should be in the extension package.|
 | request       | Yes       |The minimum supported version of the platform symbol package file, for example: "11.0.0.0". |
 | request       | Yes       |The minimum supported version, for example: ```"application": "11.0.0.0"```|
