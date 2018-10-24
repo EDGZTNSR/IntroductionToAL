@@ -1,7 +1,7 @@
 ## Used Powershell Command when Upgrading
 
 
-1. Export all needed Objects with the new Syntax
+ Export all needed Objects with the new Syntax
 
 Command:
 ```Powershell
@@ -13,6 +13,3 @@ Export-NAVApplicationObject -DatabaseName cronusDB2018_dev -Path "C:\Temp\Object
 ```
 ----------
 
-2. Export all neded Object from a C/SIDE Database.
-
-![](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/docs/src/Export.png?raw=true])
