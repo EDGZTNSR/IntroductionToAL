@@ -1,0 +1,10 @@
+site_name: Introduction to AL
+repo_url: https://github.com/EDGZTNSR/IntroductionToAL
+theme: Windmill
+nav:
+  - Home: index.md
+  - Examples:
+      - Embeds: tutorials/Embeds.md
+      - Embeds With Fields: tutorials/EmbedsWithFields.md
+      - Sending a Simple Message: tutorials/SimpleMessage.md
+      - Sending a File: tutorials/SendFile.md
