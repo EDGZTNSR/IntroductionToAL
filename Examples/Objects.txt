@@ -1,0 +1,650 @@
+OBJECT Table 50001 Class
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=133213.617T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Class;
+               DES=Klasse];
+    LookupPageID="Class List";
+  }
+  FIELDS
+  {
+    { 1   ;   ;Code                ;Code10        ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Code;
+                                                              DES=Code] }
+    { 2   ;   ;Name                ;Text30        ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Name;
+                                                              DES=Name] }
+  }
+  KEYS
+  {
+    {    ;Code                                    ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
+OBJECT Table 50002 Character
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=133612.560T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    LookupPageID="Character List";
+  }
+  FIELDS
+  {
+    { 1   ;   ;No.                 ;Code10        ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=No.;
+                                                              DES=Nr.] }
+    { 2   ;   ;Name                ;Text30        ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Name;
+                                                              DES=Name] }
+    { 3   ;   ;Class Code          ;Code10        ;TableRelation=Class.Code;
+                                                   DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Class;
+                                                              DES=Klasse] }
+    { 4   ;   ;Strength            ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Strength;
+                                                              DES=St„rke] }
+    { 5   ;   ;Dexterity           ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Dexterity;
+                                                              DES=Geschicklichkeit] }
+    { 6   ;   ;Defense             ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Defense;
+                                                              DES=Verteidigung] }
+    { 7   ;   ;Health              ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Health;
+                                                              DES=Gesundheit] }
+    { 8   ;   ;Stamina             ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Stamina;
+                                                              DES=Ausdauer] }
+    { 9   ;   ;Intelligence        ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Intelligence;
+                                                              DES=Intelligenz] }
+  }
+  KEYS
+  {
+    {    ;"No."                                   ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
+OBJECT Table 50003 Skills
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=141526.267T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    LookupPageID="Skills List";
+  }
+  FIELDS
+  {
+    { 1   ;   ;Code                ;Code10        ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Code;
+                                                              DES=Code] }
+    { 2   ;   ;Name                ;Text30        ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Name;
+                                                              DES=Name] }
+    { 3   ;   ;Classcode           ;Code10        ;TableRelation=Class.Code;
+                                                   DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Class;
+                                                              DES=Klasse] }
+    { 4   ;   ;Strength            ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Strength;
+                                                              DES=St„rke] }
+    { 5   ;   ;Dexterity           ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Dexterity;
+                                                              DES=Geschicklichkeit] }
+    { 6   ;   ;Defense             ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Defense;
+                                                              DES=Verteidigung] }
+    { 7   ;   ;Health              ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Health;
+                                                              DES=Gesundheit] }
+    { 8   ;   ;Stamina             ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Stamina;
+                                                              DES=Ausdauer] }
+    { 9   ;   ;Intelligence        ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Intelligence;
+                                                              DES=Intelligenz] }
+  }
+  KEYS
+  {
+    {    ;Code                                    ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
+OBJECT Table 50004 CharacterSkill
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=151859.230T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    LookupPageID="Character Skill List";
+  }
+  FIELDS
+  {
+    { 1   ;   ;CharacterNo.        ;Code10        ;TableRelation=Character."No.";
+                                                   DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Charcter;
+                                                              DES=Charakter] }
+    { 2   ;   ;Skill Code          ;Code10        ;TableRelation=Skills.Code WHERE (Classcode=FIELD("Character Class Code FF"),
+                                                                                    Strength=FIELD("Character Strength Filter"));
+                                                   DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Skill;
+                                                              DES=F„higkeit] }
+    { 10  ;   ;Skill Name FF       ;Text30        ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Skills.Name WHERE (Code=FIELD("Skill Code")));
+                                                   CaptionML=[ENU=Name;
+                                                              DES=Name] }
+    { 11  ;   ;Character Strength FF;Integer      ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Strength WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Strength;
+                                                              DES="St„rke "];
+                                                   Editable=false }
+    { 12  ;   ;Character Dexterity FF;Integer     ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Dexterity WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Dexterity;
+                                                              DES=Geschicklichkeit];
+                                                   Editable=false }
+    { 13  ;   ;Character Defense FF;Integer       ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Defense WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Defense;
+                                                              DES=Verteidigung];
+                                                   Editable=false }
+    { 14  ;   ;Character Health FF ;Integer       ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Health WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Health;
+                                                              DES=Gesundheit];
+                                                   Editable=false }
+    { 15  ;   ;Character Stamina FF;Integer       ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Stamina WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Stamina;
+                                                              DES=Ausdauer];
+                                                   Editable=false }
+    { 16  ;   ;Character Intelligence FF;Integer  ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Intelligence WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Intelligence;
+                                                              DES=Intelligenz];
+                                                   Editable=false }
+    { 17  ;   ;Character Class Code FF;Code10     ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character."Class Code" WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Class;
+                                                              DES=Klasse];
+                                                   Editable=false }
+    { 18  ;   ;Character Strength Filter;Integer  ;FieldClass=FlowFilter;
+                                                   CaptionML=[ENU=Strength Filter;
+                                                              DES=St„rke Filter];
+                                                   Editable=false }
+  }
+  KEYS
+  {
+    {    ;"CharacterNo.","Skill Code"             ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
+OBJECT Table 50005 TestTabelleDPO
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180711D;
+    Time=111614.117T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+  }
+  FIELDS
+  {
+    { 1   ;   ;TEstfeld            ;Integer       ;DataClassification=ToBeClassified }
+  }
+  KEYS
+  {
+    {    ;TEstfeld                                ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
+OBJECT Page 50001 Class List
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=140954.203T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Class List;
+               DES=Klassenliste];
+    SourceTable=Class;
+    PageType=List;
+  }
+  CONTROLS
+  {
+    { 1100115000;0;Container;
+                ContainerType=ContentArea;
+                Name=Control1100115000 }
+
+    { 1100115001;1;Group  ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 1100115002;2;Field  ;
+                SourceExpr=Code;
+                Name=Code;
+                ImplicitType=Code10 }
+
+    { 1100115003;2;Field  ;
+                SourceExpr=Name;
+                Name=Name;
+                ImplicitType=Text30 }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
+OBJECT Page 50002 Character List
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=153157.777T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Character List;
+               DES=Charakterliste];
+    SourceTable=Character;
+    PageType=List;
+    CardPageID="Character Card";
+    ActionList=ACTIONS
+    {
+      { 1100115011;  ;ActionContainer;
+                      ActionContainerType=ActionItems;
+                      Name=ActionContainer1100115011 }
+      { 1100115012;1 ;Action    ;
+                      Name=Skills;
+                      CaptionML=[ENU=Skills;
+                                 DES=F„higkeiten];
+                      RunObject=Page "Skills List";
+                      Promoted=true;
+                      PromotedIsBig=true;
+                      Image=Action }
+    }
+  }
+  CONTROLS
+  {
+    { 1100115000;0;Container;
+                ContainerType=ContentArea;
+                Name=Control1100115000 }
+
+    { 1100115001;1;Group  ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 1100115002;2;Field  ;
+                SourceExpr="No.";
+                Name=No.;
+                ImplicitType=Code10 }
+
+    { 1100115003;2;Field  ;
+                SourceExpr=Name;
+                Name=Name;
+                ImplicitType=Text30 }
+
+    { 1100115004;2;Field  ;
+                SourceExpr="Class Code";
+                Name=Class Code;
+                ImplicitType=Code10 }
+
+    { 1100115005;2;Field  ;
+                SourceExpr=Strength;
+                Name=Strength;
+                ImplicitType=Integer }
+
+    { 1100115006;2;Field  ;
+                SourceExpr=Dexterity;
+                Name=Dexterity;
+                ImplicitType=Integer }
+
+    { 1100115007;2;Field  ;
+                SourceExpr=Defense;
+                Name=Defense;
+                ImplicitType=Integer }
+
+    { 1100115008;2;Field  ;
+                SourceExpr=Health;
+                Name=Health;
+                ImplicitType=Integer }
+
+    { 1100115009;2;Field  ;
+                SourceExpr=Stamina;
+                Name=Stamina;
+                ImplicitType=Integer }
+
+    { 1100115010;2;Field  ;
+                SourceExpr=Intelligence;
+                Name=Intelligence;
+                ImplicitType=Integer }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
+OBJECT Page 50003 Skills List
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=141048.620T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Skills List;
+               DES=F„higkeitenliste];
+    SourceTable=Skills;
+    PageType=List;
+  }
+  CONTROLS
+  {
+    { 1100115000;0;Container;
+                ContainerType=ContentArea;
+                Name=Control1100115000 }
+
+    { 1100115001;1;Group  ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 1100115002;2;Field  ;
+                SourceExpr=Code;
+                Name=Code;
+                ImplicitType=Code10 }
+
+    { 1100115003;2;Field  ;
+                SourceExpr=Name;
+                Name=Name;
+                ImplicitType=Text30 }
+
+    { 1100115004;2;Field  ;
+                SourceExpr=Classcode;
+                Name=Classcode;
+                ImplicitType=Code10 }
+
+    { 1100115005;2;Field  ;
+                SourceExpr=Strength;
+                Name=Strength;
+                ImplicitType=Integer }
+
+    { 1100115006;2;Field  ;
+                SourceExpr=Dexterity;
+                Name=Dexterity;
+                ImplicitType=Integer }
+
+    { 1100115007;2;Field  ;
+                SourceExpr=Defense;
+                Name=Defense;
+                ImplicitType=Integer }
+
+    { 1100115008;2;Field  ;
+                SourceExpr=Health;
+                Name=Health;
+                ImplicitType=Integer }
+
+    { 1100115009;2;Field  ;
+                SourceExpr=Stamina;
+                Name=Stamina;
+                ImplicitType=Integer }
+
+    { 1100115010;2;Field  ;
+                SourceExpr=Intelligence;
+                Name=Intelligence;
+                ImplicitType=Integer }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
+OBJECT Page 50004 Character Skill List
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=151447.627T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Character Skills;
+               DES=Charakter F„higkeiten];
+    SourceTable=CharacterSkill;
+    PageType=ListPart;
+    OnAfterGetRecord=BEGIN
+                       CALCFIELDS("Character Class Code FF", "Character Strength FF");
+
+                       SETFILTER("Character Strength Filter", '<= %1', "Character Strength FF");
+                     END;
+
+    OnNewRecord=BEGIN
+                  CALCFIELDS("Character Class Code FF", "Character Strength FF");
+                END;
+
+  }
+  CONTROLS
+  {
+    { 1100115000;0;Container;
+                ContainerType=ContentArea;
+                Name=Control1100115000 }
+
+    { 1100115001;1;Group  ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 1100115003;2;Field  ;
+                SourceExpr="Skill Code";
+                Name=Skill Code;
+                ImplicitType=Code10 }
+
+    { 1100115002;2;Field  ;
+                SourceExpr="Skill Name FF";
+                Name=Skill Name FF;
+                ImplicitType=Text30 }
+
+    { 1100115005;2;Field  ;
+                SourceExpr="Character Class Code FF";
+                Name=Character Class Code FF;
+                ImplicitType=Code10 }
+
+    { 1100115004;2;Field  ;
+                SourceExpr="Character Strength FF";
+                Name=Character Strength FF;
+                ImplicitType=Integer }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
+OBJECT Page 50005 Character Card
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=143530.327T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Character Card;
+               DES=Charakterkarte];
+    SourceTable=Character;
+    PageType=Card;
+  }
+  CONTROLS
+  {
+    { 1100115000;0;Container;
+                ContainerType=ContentArea;
+                Name=Control1100115000 }
+
+    { 1100115001;1;Group  ;
+                Name=General;
+                CaptionML=[ENU=General;
+                           DES=Allgemein];
+                GroupType=Group }
+
+    { 1100115002;2;Field  ;
+                SourceExpr="No.";
+                Name=No.;
+                ImplicitType=Code10 }
+
+    { 1100115003;2;Field  ;
+                SourceExpr=Name;
+                Name=Name;
+                ImplicitType=Text30 }
+
+    { 1100115004;2;Field  ;
+                SourceExpr="Class Code";
+                Name=Class Code;
+                ImplicitType=Code10 }
+
+    { 1100115011;1;Group  ;
+                Name=Character Stats;
+                CaptionML=[ENU=Chracter Stats;
+                           DES=Charaktereigenschaften];
+                GroupType=Group }
+
+    { 1100115005;2;Field  ;
+                SourceExpr=Strength;
+                Name=Strength;
+                ImplicitType=Integer }
+
+    { 1100115006;2;Field  ;
+                SourceExpr=Dexterity;
+                Name=Dexterity;
+                ImplicitType=Integer }
+
+    { 1100115007;2;Field  ;
+                SourceExpr=Defense;
+                Name=Defense;
+                ImplicitType=Integer }
+
+    { 1100115008;2;Field  ;
+                SourceExpr=Health;
+                Name=Health;
+                ImplicitType=Integer }
+
+    { 1100115009;2;Field  ;
+                SourceExpr=Stamina;
+                Name=Stamina;
+                ImplicitType=Integer }
+
+    { 1100115010;2;Field  ;
+                SourceExpr=Intelligence;
+                Name=Intelligence;
+                ImplicitType=Integer }
+
+    { 1100115012;1;Part   ;
+                SubPageLink="CharacterNo."=FIELD("No.");
+                PagePartID="Character Skill List";
+                PartType=Page;
+                Name=Control1100115012 }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
