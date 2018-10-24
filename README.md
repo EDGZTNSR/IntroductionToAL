@@ -24,4 +24,7 @@ There are two JSON files in every AL Extension Project, the ```app.sjon``` and t
 | Setting       | Mandatory | Value |
 | ------------- | --------- | ----- |
 | name          | Yes       |"Publish to your own server"|
-| Content Cell  | Yes       |
+| type          | Yes       |Must be set to ```.al```. Required by Visual Studio Code.|
+| request       | Yes       ||
+| server        | Yes       ||
+| port          | No        ||
