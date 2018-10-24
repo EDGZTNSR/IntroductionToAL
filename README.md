@@ -33,7 +33,6 @@ There are two JSON files in every AL Extension Project, the ```app.sjon``` and t
 | authentication| No        |Specifies the server authentication method.|
 | startupObjectType| No     |Specifies whether the object to open after publishing is a Page type (```"Page"```) or Table type (```"Table"```) object. The default is ```Page```.|
 | startupObjectId| No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
-| schemaUpdateMode| No|Specifies the data synchronization mode when you publish an extension to the development server, for example: 
-"schemaUpdateMode": ```"Synchronize Recreate"```|
+| schemaUpdateMode| No      |Specifies the data synchronization mode when you publish an extension to the development server, for example: "schemaUpdateMode": ```"Synchronize Recreate"```|
 | breakOnError  | No|Specifies whether to break on errors when debugging. The default value is ```true```.|
 | breakOnRecordWrite| No|Specifies if the debugger breaks on record changes. The default value is ```false```.|
