@@ -1,0 +1,83 @@
+OBJECT Table 50004 CharacterSkill
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=151859.230T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    LookupPageID="Character Skill List";
+  }
+  FIELDS
+  {
+    { 1   ;   ;CharacterNo.        ;Code10        ;TableRelation=Character."No.";
+                                                   DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Charcter;
+                                                              DES=Charakter] }
+    { 2   ;   ;Skill Code          ;Code10        ;TableRelation=Skills.Code WHERE (Classcode=FIELD("Character Class Code FF"),
+                                                                                    Strength=FIELD("Character Strength Filter"));
+                                                   DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Skill;
+                                                              DES=F„higkeit] }
+    { 10  ;   ;Skill Name FF       ;Text30        ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Skills.Name WHERE (Code=FIELD("Skill Code")));
+                                                   CaptionML=[ENU=Name;
+                                                              DES=Name] }
+    { 11  ;   ;Character Strength FF;Integer      ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Strength WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Strength;
+                                                              DES="St„rke "];
+                                                   Editable=false }
+    { 12  ;   ;Character Dexterity FF;Integer     ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Dexterity WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Dexterity;
+                                                              DES=Geschicklichkeit];
+                                                   Editable=false }
+    { 13  ;   ;Character Defense FF;Integer       ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Defense WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Defense;
+                                                              DES=Verteidigung];
+                                                   Editable=false }
+    { 14  ;   ;Character Health FF ;Integer       ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Health WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Health;
+                                                              DES=Gesundheit];
+                                                   Editable=false }
+    { 15  ;   ;Character Stamina FF;Integer       ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Stamina WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Stamina;
+                                                              DES=Ausdauer];
+                                                   Editable=false }
+    { 16  ;   ;Character Intelligence FF;Integer  ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character.Intelligence WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Intelligence;
+                                                              DES=Intelligenz];
+                                                   Editable=false }
+    { 17  ;   ;Character Class Code FF;Code10     ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(Character."Class Code" WHERE ("No."=FIELD("CharacterNo.")));
+                                                   CaptionML=[ENU=Class;
+                                                              DES=Klasse];
+                                                   Editable=false }
+    { 18  ;   ;Character Strength Filter;Integer  ;FieldClass=FlowFilter;
+                                                   CaptionML=[ENU=Strength Filter;
+                                                              DES=St„rke Filter];
+                                                   Editable=false }
+  }
+  KEYS
+  {
+    {    ;"CharacterNo.","Skill Code"             ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

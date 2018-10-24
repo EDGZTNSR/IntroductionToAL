@@ -1,0 +1,31 @@
+OBJECT Table 50005 TestTabelleDPO
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180711D;
+    Time=111614.117T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+  }
+  FIELDS
+  {
+    { 1   ;   ;TEstfeld            ;Integer       ;DataClassification=ToBeClassified }
+  }
+  KEYS
+  {
+    {    ;TEstfeld                                ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

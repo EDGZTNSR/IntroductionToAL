@@ -1,0 +1,59 @@
+OBJECT Table 50003 Skills
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=141526.267T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    LookupPageID="Skills List";
+  }
+  FIELDS
+  {
+    { 1   ;   ;Code                ;Code10        ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Code;
+                                                              DES=Code] }
+    { 2   ;   ;Name                ;Text30        ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Name;
+                                                              DES=Name] }
+    { 3   ;   ;Classcode           ;Code10        ;TableRelation=Class.Code;
+                                                   DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Class;
+                                                              DES=Klasse] }
+    { 4   ;   ;Strength            ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Strength;
+                                                              DES=St„rke] }
+    { 5   ;   ;Dexterity           ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Dexterity;
+                                                              DES=Geschicklichkeit] }
+    { 6   ;   ;Defense             ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Defense;
+                                                              DES=Verteidigung] }
+    { 7   ;   ;Health              ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Health;
+                                                              DES=Gesundheit] }
+    { 8   ;   ;Stamina             ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Stamina;
+                                                              DES=Ausdauer] }
+    { 9   ;   ;Intelligence        ;Integer       ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Intelligence;
+                                                              DES=Intelligenz] }
+  }
+  KEYS
+  {
+    {    ;Code                                    ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

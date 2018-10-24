@@ -1,0 +1,94 @@
+OBJECT Page 50005 Character Card
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=143530.327T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Character Card;
+               DES=Charakterkarte];
+    SourceTable=Character;
+    PageType=Card;
+  }
+  CONTROLS
+  {
+    { 1100115000;0;Container;
+                ContainerType=ContentArea;
+                Name=Control1100115000 }
+
+    { 1100115001;1;Group  ;
+                Name=General;
+                CaptionML=[ENU=General;
+                           DES=Allgemein];
+                GroupType=Group }
+
+    { 1100115002;2;Field  ;
+                SourceExpr="No.";
+                Name=No.;
+                ImplicitType=Code10 }
+
+    { 1100115003;2;Field  ;
+                SourceExpr=Name;
+                Name=Name;
+                ImplicitType=Text30 }
+
+    { 1100115004;2;Field  ;
+                SourceExpr="Class Code";
+                Name=Class Code;
+                ImplicitType=Code10 }
+
+    { 1100115011;1;Group  ;
+                Name=Character Stats;
+                CaptionML=[ENU=Chracter Stats;
+                           DES=Charaktereigenschaften];
+                GroupType=Group }
+
+    { 1100115005;2;Field  ;
+                SourceExpr=Strength;
+                Name=Strength;
+                ImplicitType=Integer }
+
+    { 1100115006;2;Field  ;
+                SourceExpr=Dexterity;
+                Name=Dexterity;
+                ImplicitType=Integer }
+
+    { 1100115007;2;Field  ;
+                SourceExpr=Defense;
+                Name=Defense;
+                ImplicitType=Integer }
+
+    { 1100115008;2;Field  ;
+                SourceExpr=Health;
+                Name=Health;
+                ImplicitType=Integer }
+
+    { 1100115009;2;Field  ;
+                SourceExpr=Stamina;
+                Name=Stamina;
+                ImplicitType=Integer }
+
+    { 1100115010;2;Field  ;
+                SourceExpr=Intelligence;
+                Name=Intelligence;
+                ImplicitType=Integer }
+
+    { 1100115012;1;Part   ;
+                SubPageLink="CharacterNo."=FIELD("No.");
+                PagePartID="Character Skill List";
+                PartType=Page;
+                Name=Control1100115012 }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

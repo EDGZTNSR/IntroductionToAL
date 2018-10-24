@@ -1,0 +1,45 @@
+OBJECT Page 50001 Class List
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=140954.203T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Class List;
+               DES=Klassenliste];
+    SourceTable=Class;
+    PageType=List;
+  }
+  CONTROLS
+  {
+    { 1100115000;0;Container;
+                ContainerType=ContentArea;
+                Name=Control1100115000 }
+
+    { 1100115001;1;Group  ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 1100115002;2;Field  ;
+                SourceExpr=Code;
+                Name=Code;
+                ImplicitType=Code10 }
+
+    { 1100115003;2;Field  ;
+                SourceExpr=Name;
+                Name=Name;
+                ImplicitType=Text30 }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

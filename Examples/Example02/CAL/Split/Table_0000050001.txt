@@ -1,0 +1,39 @@
+OBJECT Table 50001 Class
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=133213.617T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Class;
+               DES=Klasse];
+    LookupPageID="Class List";
+  }
+  FIELDS
+  {
+    { 1   ;   ;Code                ;Code10        ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Code;
+                                                              DES=Code] }
+    { 2   ;   ;Name                ;Text30        ;DataClassification=ToBeClassified;
+                                                   CaptionML=[ENU=Name;
+                                                              DES=Name] }
+  }
+  KEYS
+  {
+    {    ;Code                                    ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

@@ -1,0 +1,95 @@
+OBJECT Page 50002 Character List
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=153157.777T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Character List;
+               DES=Charakterliste];
+    SourceTable=Character;
+    PageType=List;
+    CardPageID="Character Card";
+    ActionList=ACTIONS
+    {
+      { 1100115011;  ;ActionContainer;
+                      ActionContainerType=ActionItems;
+                      Name=ActionContainer1100115011 }
+      { 1100115012;1 ;Action    ;
+                      Name=Skills;
+                      CaptionML=[ENU=Skills;
+                                 DES=F„higkeiten];
+                      RunObject=Page "Skills List";
+                      Promoted=true;
+                      PromotedIsBig=true;
+                      Image=Action }
+    }
+  }
+  CONTROLS
+  {
+    { 1100115000;0;Container;
+                ContainerType=ContentArea;
+                Name=Control1100115000 }
+
+    { 1100115001;1;Group  ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 1100115002;2;Field  ;
+                SourceExpr="No.";
+                Name=No.;
+                ImplicitType=Code10 }
+
+    { 1100115003;2;Field  ;
+                SourceExpr=Name;
+                Name=Name;
+                ImplicitType=Text30 }
+
+    { 1100115004;2;Field  ;
+                SourceExpr="Class Code";
+                Name=Class Code;
+                ImplicitType=Code10 }
+
+    { 1100115005;2;Field  ;
+                SourceExpr=Strength;
+                Name=Strength;
+                ImplicitType=Integer }
+
+    { 1100115006;2;Field  ;
+                SourceExpr=Dexterity;
+                Name=Dexterity;
+                ImplicitType=Integer }
+
+    { 1100115007;2;Field  ;
+                SourceExpr=Defense;
+                Name=Defense;
+                ImplicitType=Integer }
+
+    { 1100115008;2;Field  ;
+                SourceExpr=Health;
+                Name=Health;
+                ImplicitType=Integer }
+
+    { 1100115009;2;Field  ;
+                SourceExpr=Stamina;
+                Name=Stamina;
+                ImplicitType=Integer }
+
+    { 1100115010;2;Field  ;
+                SourceExpr=Intelligence;
+                Name=Intelligence;
+                ImplicitType=Integer }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
