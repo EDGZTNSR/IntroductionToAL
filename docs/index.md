@@ -1,6 +1,4 @@
 ![Version](https://img.shields.io/badge/Version-Oct2018-blue.svg)
-# Introduction To AL/D365 Business Central Development
-A small introduction to the development of extensions with AL
 
 ## Getting Started
 ****
@@ -22,10 +20,3 @@ Go through the following steps to set up a sandbox environment. With this you ge
 7. Press F5 to deploy and run the extension on your online sandbox tenant.
 ```
 ----------
-
-## Debugging
-
-The process of finding and correcting errors is called debugging. With Visual Studio Code and the AL Language extension you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing F5.
-
-For more Information see the Offical Documentation for Debugging from Visual Studio Code [Here](https://code.visualstudio.com/docs/editor/debugging)
-
