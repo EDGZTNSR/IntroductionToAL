@@ -6,3 +6,5 @@ nav:
   - Development in AL:
       - JSON: docs/json.md
       - Debugging: docs/debugging.md
+      - Upgrade Extension: docs/ExtensionUpgrade.md
+      - Common Error: docs/commonErrors.md
