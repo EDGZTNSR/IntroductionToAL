@@ -21,3 +21,5 @@ The following Steps are necessary for Extension Upgrades:
 ---------
 
 3. [Command 2: Generate DELTA](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/Examples/Example02/PowershellCommands.md)
+
+4. [Command 3: Convert C/AL To AL](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/Examples/Example02/PowershellCommands.md)
