@@ -1,7 +1,6 @@
 site_name: Introduction to AL
 repo_url: https://github.com/EDGZTNSR/IntroductionToAL
-theme: 
-  - name: Cinder
+theme: Cinder
 nav:
   - Getting Started: index.md
   - Development in AL:
