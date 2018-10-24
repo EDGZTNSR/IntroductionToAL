@@ -14,10 +14,10 @@ The following Steps are necessary for Extension Upgrades:
 
 ### Project: Convertion from C/AL to AL [Example02](https://github.com/EDGZTNSR/IntroductionToAL/tree/master/Examples/Example02)
 
-* [Command 1: How to Export to new Syntax](IntroductionToAL/docs/Commands/Powershell/Upgrade V1%to%V2.md)
-* [Export all neded Object from a C/SIDE Database.](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/docs/src/Export.png?raw=true])
-* [Command 2: Generate DELTA](https://github.com/EDGZTNSR/IntroductionToAL/docs/Commands/Powershell/Upgrade V1%to%V2.md)
-* [Command 3: Convert C/AL To AL](https://github.com/EDGZTNSR/IntroductionToAL/docs/Commands/Powershell/Upgrade V1%to%V2.md)
+* [Command 1: How to Export to new Syntax](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/docs/Commands/Powershell/Upgrade%20V1%20to%20V2.md)
+* [Export all neded Object from a C/SIDE Database.](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/docs/Commands/Powershell/Upgrade%20V1%20to%20V2.md?raw=true])
+* [Command 2: Generate DELTA](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/docs/Commands/Powershell/Upgrade%20V1%20to%20V2.md)
+* [Command 3: Convert C/AL To AL](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/docs/Commands/Powershell/Upgrade%20V1%20to%20V2.md)
 
 
 Now the only thing left is complete the development of the extension.
