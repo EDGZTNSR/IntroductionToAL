@@ -1,0 +1,8 @@
+site_name: IntroductionToAL
+repo_url: https://github.com/EDGZTNSR/IntroductionToAL
+theme: readthedocs
+nav:
+  - Home: index.md
+  - Examples: 
+    - Example01: 
+      - AL Code: Examples/Example01/src/pageextension/Pag-Ext50100.CustomerListExt.md
