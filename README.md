@@ -28,3 +28,9 @@ There are two JSON files in every AL Extension Project, the ```app.sjon``` and t
 | request       | Yes       ||
 | server        | Yes       ||
 | port          | No        ||
+| serverInstance| No        ||
+| authentication| No        ||
+| startupObjectType| No     ||
+| startupObjectId| No||
+| schemaUpdateMode| No||
+| breakOnError  | No||
