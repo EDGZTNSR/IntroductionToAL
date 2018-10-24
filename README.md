@@ -27,7 +27,7 @@ There are two JSON files in every AL Extension Project, the ```app.sjon``` and t
 | name          | Yes       |"Publish to your own server"|
 | type          | Yes       |Must be set to ```.al```. Required by Visual Studio Code.|
 | request       | Yes       |Request type of the configuration. Must be set to ```launch```. Required by Visual Studio Code.|
-| server        | Yes       |The HTTP URL of your server, for example: ```"http://localhost|serverInstance"```|
+| server        | Yes       |The HTTP URL of your server, for example: ```"http://localhost\|serverInstance"```|
 | port          | No        |The port assigned to the development service.|
 | serverInstance| No        |The instance name of your server, for example: ```US```|
 | authentication| No        |Specifies the server authentication method.|
