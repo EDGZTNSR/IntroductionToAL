@@ -13,15 +13,12 @@ The following Steps are necessary for Extension Upgrades:
 ----------
 
 ### Project: Convertion from C/AL to AL [Example02](https://github.com/EDGZTNSR/IntroductionToAL/tree/master/Examples/Example02)
-
+---------
 1. [Command 1: How to Export to new Syntax](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/Examples/Example02/PowershellCommands.md)
 ---------
-
 2. Export all neded Object from a C/SIDE Database.
-
 ![](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/docs/src/Export.png?raw=true])
 ---------
-
 3. [Command 2: Generate DELTA](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/Examples/Example02/PowershellCommands.md)
-
+---------
 4. [Command 3: Convert C/AL To AL](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/Examples/Example02/PowershellCommands.md)
