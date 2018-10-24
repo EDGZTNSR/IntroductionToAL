@@ -64,7 +64,7 @@ OBJECT Table 50002 Character
                                                               DES=Klasse] }
     { 4   ;   ;Strength            ;Integer       ;DataClassification=ToBeClassified;
                                                    CaptionML=[ENU=Strength;
-                                                              DES=St„rke] }
+                                                              DES=Stâ€žrke] }
     { 5   ;   ;Dexterity           ;Integer       ;DataClassification=ToBeClassified;
                                                    CaptionML=[ENU=Dexterity;
                                                               DES=Geschicklichkeit] }
@@ -123,7 +123,7 @@ OBJECT Table 50003 Skills
                                                               DES=Klasse] }
     { 4   ;   ;Strength            ;Integer       ;DataClassification=ToBeClassified;
                                                    CaptionML=[ENU=Strength;
-                                                              DES=St„rke] }
+                                                              DES=Stâ€žrke] }
     { 5   ;   ;Dexterity           ;Integer       ;DataClassification=ToBeClassified;
                                                    CaptionML=[ENU=Dexterity;
                                                               DES=Geschicklichkeit] }
@@ -178,7 +178,7 @@ OBJECT Table 50004 CharacterSkill
                                                                                     Strength=FIELD("Character Strength Filter"));
                                                    DataClassification=ToBeClassified;
                                                    CaptionML=[ENU=Skill;
-                                                              DES=F„higkeit] }
+                                                              DES=Fâ€žhigkeit] }
     { 10  ;   ;Skill Name FF       ;Text30        ;FieldClass=FlowField;
                                                    CalcFormula=Lookup(Skills.Name WHERE (Code=FIELD("Skill Code")));
                                                    CaptionML=[ENU=Name;
@@ -186,7 +186,7 @@ OBJECT Table 50004 CharacterSkill
     { 11  ;   ;Character Strength FF;Integer      ;FieldClass=FlowField;
                                                    CalcFormula=Lookup(Character.Strength WHERE ("No."=FIELD("CharacterNo.")));
                                                    CaptionML=[ENU=Strength;
-                                                              DES="St„rke "];
+                                                              DES="Stâ€žrke "];
                                                    Editable=false }
     { 12  ;   ;Character Dexterity FF;Integer     ;FieldClass=FlowField;
                                                    CalcFormula=Lookup(Character.Dexterity WHERE ("No."=FIELD("CharacterNo.")));
@@ -220,7 +220,7 @@ OBJECT Table 50004 CharacterSkill
                                                    Editable=false }
     { 18  ;   ;Character Strength Filter;Integer  ;FieldClass=FlowFilter;
                                                    CaptionML=[ENU=Strength Filter;
-                                                              DES=St„rke Filter];
+                                                              DES=Stâ€žrke Filter];
                                                    Editable=false }
   }
   KEYS
@@ -338,7 +338,7 @@ OBJECT Page 50002 Character List
       { 1100115012;1 ;Action    ;
                       Name=Skills;
                       CaptionML=[ENU=Skills;
-                                 DES=F„higkeiten];
+                                 DES=Fâ€žhigkeiten];
                       RunObject=Page "Skills List";
                       Promoted=true;
                       PromotedIsBig=true;
@@ -421,7 +421,7 @@ OBJECT Page 50003 Skills List
   PROPERTIES
   {
     CaptionML=[ENU=Skills List;
-               DES=F„higkeitenliste];
+               DES=Fâ€žhigkeitenliste];
     SourceTable=Skills;
     PageType=List;
   }
@@ -501,7 +501,7 @@ OBJECT Page 50004 Character Skill List
   PROPERTIES
   {
     CaptionML=[ENU=Character Skills;
-               DES=Charakter F„higkeiten];
+               DES=Charakter Fâ€žhigkeiten];
     SourceTable=CharacterSkill;
     PageType=ListPart;
     OnAfterGetRecord=BEGIN
