@@ -22,7 +22,7 @@ Go through the following steps to set up a sandbox environment. With this you ge
 7. Press F5 to deploy and run the extension on your online sandbox tenant.
 ```
 ----------
-### JSON Files
+## JSON Files
 
 There are two JSON files in every AL Extension Project, the ```app.sjon``` and the ```launch.sjon``` file. The files are automatically generated.
 
@@ -65,4 +65,11 @@ There are two JSON files in every AL Extension Project, the ```app.sjon``` and t
 | target       | Yes       |	By default this is ```Extension```. For Dynamics NAV, you can set this to ```Internal``` to get access to otherwise restricted APIs. The Dynamics NAV Server setting must then also be set to ```Internal```.|
 | helpBaseUrl       | Yes       |The URL for the website that displays help for the current extension. The default URL is ```https://docs.microsoft.com/{0}/dynamics365/business-central```.|
 | supportedLocales       | Yes       |The list of locales that are supported for looking up help. The value on the list is inserted into the URL defined in the ```helpBaseUrl``` property. The first locale on the list is default. An example is ```"supportedLocales": ["da-DK", "en-US"]```.|
+
+
+## Debugging
+
+The process of finding and correcting errors is called debugging. With Visual Studio Code and the AL Language extension you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing F5.
+
+For more Information see the Offical Documentation for Debugging from Visual Studio Code [Here](https://code.visualstudio.com/docs/editor/debugging)
 
