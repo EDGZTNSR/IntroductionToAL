@@ -17,3 +17,11 @@ Go through the following steps to set up a sandbox environment. With this you ge
 6. Enter the credentials you provided for the sign up, and then Download symbols. To manually download the symbols, press Ctrl+Shift+P and select AL: Download symbols.
 7. Press F5 to deploy and run the extension on your online sandbox tenant.
 ```
+
+### JSON Files
+There are two JSON files in every AL Extension Project, the ```app.sjon``` and the ```launch.sjon``` file. The files are automatically generated.
+
+| Setting       | Mandatory | Value |
+| ------------- | --------- | ----- |
+| name          | Yes       |"Publish to your own server"|
+| Content Cell  | Yes       |
