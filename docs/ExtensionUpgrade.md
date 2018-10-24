@@ -12,7 +12,7 @@ The following Steps are necessary for Extension Upgrades:
 
 ### Project: Convertion from C/AL to AL [Example02]()
 
-1. ![Use Powershell Command 1](https://github.com/EDGZTNSR/IntroductionToAL/Examples/Example02/)
+1. [Use Powershell Command 1](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/docs/ExtensionUpgrade.md)
 ---------
 2. Export all neded Object from a C/SIDE Database.
 
