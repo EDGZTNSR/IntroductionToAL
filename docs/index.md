@@ -21,8 +21,9 @@ Go through the following steps to set up a sandbox environment. With this you ge
 6. Enter the credentials you provided for the sign up, and then Download symbols. To manually download the symbols, press Ctrl+Shift+P and select AL: Download symbols.
 7. Press F5 to deploy and run the extension on your online sandbox tenant.
 ```
-______
+----------
 ### JSON Files
+----------
 There are two JSON files in every AL Extension Project, the ```app.sjon``` and the ```launch.sjon``` file. The files are automatically generated.
 ----------
 #### launch.json File
@@ -40,7 +41,7 @@ There are two JSON files in every AL Extension Project, the ```app.sjon``` and t
 | schemaUpdateMode| No      |Specifies the data synchronization mode when you publish an extension to the development server, for example: "schemaUpdateMode": ```"Synchronize Recreate"```|
 | breakOnError  | No|Specifies whether to break on errors when debugging. The default value is ```true```.|
 | breakOnRecordWrite| No|Specifies if the debugger breaks on record changes. The default value is ```false```.|
-
+----------
 #### app.json File
 | Setting       | Mandatory | Value |
 | ------------- | --------- | ----- |
