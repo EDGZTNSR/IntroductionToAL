@@ -1,9 +1,9 @@
-##Most Commen Error List
+#### Most Commen Error List
 
 When developing an Extension for Dynamics 365 Business Central we often run into the same Errors. Here is an List of the Errors i ran into most.
 
 
-###Compilation Errors
+#### Compilation Errors
 
 | What is the Error? | How to Fix it|
 |--------------------|--------------|
