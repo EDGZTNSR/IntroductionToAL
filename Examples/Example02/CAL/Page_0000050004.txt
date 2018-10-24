@@ -1,0 +1,65 @@
+OBJECT Page 50004 Character Skill List
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20180524D;
+    Time=151447.627T;
+    Modified=true;
+    Version List=;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Character Skills;
+               DES=Charakter F„higkeiten];
+    SourceTable=CharacterSkill;
+    PageType=ListPart;
+    OnAfterGetRecord=BEGIN
+                       CALCFIELDS("Character Class Code FF", "Character Strength FF");
+
+                       SETFILTER("Character Strength Filter", '<= %1', "Character Strength FF");
+                     END;
+
+    OnNewRecord=BEGIN
+                  CALCFIELDS("Character Class Code FF", "Character Strength FF");
+                END;
+
+  }
+  CONTROLS
+  {
+    { 1100115000;0;Container;
+                ContainerType=ContentArea;
+                Name=Control1100115000 }
+
+    { 1100115001;1;Group  ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 1100115003;2;Field  ;
+                SourceExpr="Skill Code";
+                Name=Skill Code;
+                ImplicitType=Code10 }
+
+    { 1100115002;2;Field  ;
+                SourceExpr="Skill Name FF";
+                Name=Skill Name FF;
+                ImplicitType=Text30 }
+
+    { 1100115005;2;Field  ;
+                SourceExpr="Character Class Code FF";
+                Name=Character Class Code FF;
+                ImplicitType=Code10 }
+
+    { 1100115004;2;Field  ;
+                SourceExpr="Character Strength FF";
+                Name=Character Strength FF;
+                ImplicitType=Integer }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
