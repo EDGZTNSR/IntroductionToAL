@@ -1,8 +1,7 @@
 ## Used Powershell Command when Upgrading
 
-----------
 
-Export all needed Objects with the new Syntax
+1. Export all needed Objects with the new Syntax
 _____
 Command:
 ```Powershell
