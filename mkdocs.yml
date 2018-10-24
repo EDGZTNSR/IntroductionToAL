@@ -2,6 +2,6 @@ site_name: Introduction to AL
 repo_url: https://github.com/EDGZTNSR/IntroductionToAL
 theme: readthedocs
 nav:
-  - Home: index.md
+  - Getting Started: index.md
   - Development in AL:
       - JSON: docs/json.md
