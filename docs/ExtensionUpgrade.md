@@ -10,7 +10,7 @@ The following Steps are necessary for Extension Upgrades:
 5. Uninstall the V1 extension, and publish and run upgrade on the V2 extension.
 ----------
 
-### Project: Convertion from C/AL to AL [Example02]()
+### Project: Convertion from C/AL to AL [Example02](https://github.com/EDGZTNSR/IntroductionToAL/tree/master/Examples/Example02)
 
 1. [Use Powershell Command 1](https://github.com/EDGZTNSR/IntroductionToAL/blob/master/docs/ExtensionUpgrade.md)
 ---------
