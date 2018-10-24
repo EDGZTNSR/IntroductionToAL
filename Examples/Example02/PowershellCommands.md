@@ -12,4 +12,14 @@ Example:
 Export-NAVApplicationObject -DatabaseName cronusDB2018_dev -Path "C:\Temp\Objects.txt" -DatabaseServer server01 -Filter "type=table|page;ID=50001..50005" -ExportToNewSyntax
 ```
 ----------
+ **COMMAND 2:** Generate DELTA 
 
+Command:
+```Powershell
+Compare-NAVApplicationObject -OriginalPath -ModifiedPath  -ExportToNewSyntax
+```
+Example:
+```Powershell
+Compare-NAVApplicationObject -OriginalPath "C:\Temp\Original.txt" -ModifiedPath "C:\Temp\Modifed.txt" -ExportToNewSyntax
+```
+----------
