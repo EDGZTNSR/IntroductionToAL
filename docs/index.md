@@ -41,7 +41,7 @@ There are two JSON files in every AL Extension Project, the ```app.sjon``` and t
 | schemaUpdateMode| No      |Specifies the data synchronization mode when you publish an extension to the development server, for example: "schemaUpdateMode": ```"Synchronize Recreate"```|
 | breakOnError  | No|Specifies whether to break on errors when debugging. The default value is ```true```.|
 | breakOnRecordWrite| No|Specifies if the debugger breaks on record changes. The default value is ```false```.|
-----------
+
 #### app.json File
 | Setting       | Mandatory | Value |
 | ------------- | --------- | ----- |
