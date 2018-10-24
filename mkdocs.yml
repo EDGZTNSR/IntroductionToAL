@@ -1,6 +1,6 @@
 site_name: Introduction to AL
 repo_url: https://github.com/EDGZTNSR/IntroductionToAL
-theme: Windmill
+theme: readthedocs
 nav:
   - Home: index.md
   - Development in AL:
