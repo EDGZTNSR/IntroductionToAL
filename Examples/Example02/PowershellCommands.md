@@ -14,3 +14,4 @@ Export-NAVApplicationObject -DatabaseName cronusDB2018_dev -Path "C:\Temp\Object
 ----------
 
 2. Export all neded Object from a C/SIDE Database.
+[](https://github.com/EDGZTNSR/IntroductionToAL/docs/src/Export.png)
