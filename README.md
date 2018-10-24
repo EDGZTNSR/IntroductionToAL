@@ -6,7 +6,7 @@ A small introduction to the development of extensions with AL
 
 ### Documentation
 
-You can find my Documentation [Here](https://introductiontoal.readthedocs.io/en/latest/)
+You can find my Documentation [Here](https://introductiontoal.readthedocs.io/en/latest/)!
 
 ### Setup sandbox environment and Visual Studio Code
 To get started writing extensions for Dynamics 365 Business Central you will need a Dynamics 365 Business Central tenant, Visual Studio Code, and the AL Language extension. Visual Studio Code is a cross platform editor that you will use for coding and debugging.
