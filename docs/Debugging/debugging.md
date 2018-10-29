@@ -16,7 +16,7 @@ For more Information see the Offical Documentation for Debugging from Visual Stu
 | F5 | Start debugging  |
 | Ctrl+F5  | Start without debugging  |
 | Shift+F5 | Stop debugging  |
-| Ctrol+Shift+F5 | Restart debugging  |
+| Ctrl+Shift+F5 | Restart debugging  |
 | F10 | Step over  |
 | F11 | Step into  |
 | Shift+F11 | Step out  |
